@@ -1,0 +1,674 @@
+@font-face {
+	font-family: OpenSans-Bold;
+	src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+	font-family: OpenSans-Regular;
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+.header {
+	color: #fff;
+	text-transform: uppercase;
+	font: 28px/40px OpenSans-Bold, sans-serif; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(25, 25, 58, 0.9);
+}
+.surfaceTextIcon {
+	fill: #ffffff;
+}
+.appstoreIcon {
+	fill: #ffffff;
+	width: 20px;
+	margin-right: 5px;
+}
+.googleplayIcon {
+	fill: #ffffff;
+	width: 22px;
+	margin-right: 5px;
+}
+h2 {
+	text-transform: uppercase;
+	font-family: OpenSans-Bold, sans-serif;
+	color: #e7e7e7;
+}
+h3 {
+	text-transform: uppercase;
+	font-family: OpenSans-Bold, sans-serif;
+	color: #c1c1c1;
+}
+p {
+	font-family: OpenSans-Regular, sans-serif;
+}
+button {
+	font-family: OpenSans-Regular, sans-serif;
+	color: #fff;
+	background-color: #5e42b0;
+	border: none;
+	border-radius: 17px;
+	display: flex;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	justify-content: center;
+}
+button div {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+button div span {
+	font-family: OpenSans-Bold, sans-serif;
+}
+
+h3 span {
+	position: relative;
+	color: #000;
+}
+h3 span::before {
+	content: '';
+	bottom: 2px;
+	right: 0;
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	background-color: #5e42b0;
+}
+.athlets03 h3 span::before, .players03 h3 span::before {
+	background-color: #fff;
+}
+.players03 h3 span {
+	color: #8765dd;
+}
+
+.athlets02, .players02 {
+	background-color: #f5f4f9;
+}
+.athlets03 {
+	background-color: #5e42b0;
+}
+.players03 {
+	background-color: #090c35;
+}
+.athlets03 p, .players03 p {
+	color: #fff;
+}
+
+.athlets03 h3, .players03 h3 {
+	margin-top: 0px;
+}
+.athlets02 p, .players02 p {
+	margin-bottom: 0px;
+}
+
+.number01, .number02,  .number03 {
+	background-color: #5e42b0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.number01 span, .number02 span,.number03 span {
+	color: #fff;
+	position: relative;
+}
+
+.number01 span::before, .number02 span::before, .number03 span::before {
+	content: '';
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	background-color: #8f7bc8;
+}
+
+.beActive, .findContact, .workIt  {
+	position: relative;
+}
+
+.beActive picture img, .findContact picture img, .workIt picture img {
+	max-width: 100%;
+}
+
+.surfaceShortIcon {
+	fill: #ffffff;
+}
+.footer {
+	color: #fff;
+	text-transform: uppercase;
+	font-family: OpenSans-Regular, sans-serif;
+	background-color: rgba(25, 25, 58, 0.9);
+	display: flex;
+}
+
+
+@media (max-width: 640px){
+header {
+	background: url("../img/football_767.jpg") no-repeat;
+	background-size: cover;
+}
+
+.header {
+	font: 28px/30px OpenSans-Bold, sans-serif;
+	padding-bottom: 85px; 
+}
+header .surfaceTextIcon {
+	width: 133px;
+	margin-top: 33px;
+	margin-bottom: 135px;
+}
+.motto1 {
+	padding-bottom: 15px;
+	margin-left: 20px;
+}
+.motto2 {
+	padding-bottom: 90px;
+	margin-left: 63px;
+	margin-right: 9%;
+}
+.motto {
+	display: flex;
+	flex-direction: column;
+}
+.buttons {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+}
+
+button {
+	font-size: 8px;
+	margin-top: 15px;
+}
+
+.googleplayIcon {
+	margin-left: -15px;
+}
+div.athlets01, div.players01 {
+	padding-top: 0px;
+}
+.athlets01 picture, .players01 picture {
+	display: flex;
+	justify-content: center;
+}
+.athlets01, .players01 {
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+.athlets02, .players02 {
+	padding-top: 27px;
+	padding-bottom: 55px;
+}
+.athlets03, .players03 {
+	padding-top: 50px;
+	padding-bottom: 55px;
+}
+.athlets01 h2, .players01 h2 {
+	font-size: 50px;
+	margin-top: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.beActive h2, .findContact h2, .workIt h2 {
+	font-size: 28px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: -30px;
+}
+h3 {
+	font-size: 23px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.athlets01 p, .athlets02 p, .athlets03 p, .players01 p, .players02 p, .players03 p {
+	font-size: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.beActive p, .findContact p, .workIt p {
+	font-size: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+h3 span {
+	font-size: 16px;
+}
+.number01, .number02, .number03 {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	bottom: 50px;
+	left: 20px;
+}
+.number01 span, .number02 span,.number03 span {
+	font: 14px/30px OpenSans-Bold, sans-serif;
+}
+
+footer {
+	background: url("../img/game_767.jpg") no-repeat;
+	background-size: cover;
+}
+.footer {
+	flex-direction: column;
+	align-items: center;
+}
+.surfaceShortIcon {
+	width: 60px;
+}
+.shortIcon {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 72px;
+	height: 74px;
+	background: linear-gradient(#7755d7, #50379b);
+	border-radius: 10px;
+	margin-top: 100px;
+}
+.download {
+	font: 32px/30px OpenSans-Bold, sans-serif;
+	padding-top: 60px; 
+}
+.showeveryone {
+	font: 14px/30px OpenSans-Regular, sans-serif;
+	color: #9b8ec1;
+	padding-bottom: 60px;
+}
+footer .surfaceTextIcon {
+	width: 133px;
+	margin-top: 80px;
+	margin-bottom: 10px;
+}
+}
+
+@media (min-width: 641px) and (max-width: 960px){
+header {
+	background: url("../img/football_1280.jpg") no-repeat;
+	background-size: cover;
+}
+.header {
+	font: 64px/60px OpenSans-Bold, sans-serif;
+	padding-bottom: 85px; 
+}
+.surfaceTextIcon {
+	width: 205px;
+	margin-top: 40px;
+	margin-bottom: 180px;
+}
+
+.motto1 {
+	padding-bottom: 15px;
+	margin-left: 8%;
+}
+.motto2 {
+	padding-bottom: 90px;
+	margin-left: 21%;
+	margin-right: 2%;
+}
+.motto {
+	display: flex;
+	flex-direction: column;
+}
+.buttons {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+button {
+	font-size: 14px;
+	flex-direction: row;
+	width: 40%;
+}
+.appstore {
+	margin-right: 15px;
+}
+.googleplay {
+	margin-left: 15px;
+}
+.appstoreIcon, .googleplayIcon {
+	margin-right: 15px;
+}
+
+h2 {
+	font-size: 80px;
+}
+h3 {
+	font-size: 32px;
+}
+.athlets01 p, .athlets02 p, .athlets03 p, .players01 p, .players02 p {
+	font: 16px/28px OpenSans-Regular, sans-serif;
+}
+.players03 p {
+	font: 18px/28px OpenSans-Regular, sans-serif;
+}
+
+.athlets01, .athlets02, .athlets03 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-left: 46%;
+	padding-right: 30px;
+}
+.players01, .players02, .players03 {
+	padding-left: 30px;
+}
+
+.athlets01 {
+	position: relative;
+	padding-bottom: 24px;
+}
+.athlets01 picture {
+	position: absolute;
+	left: -150px;
+	top: 115px;
+}
+
+.athlets01 h2, .players01 h2 {
+	margin-top: 85px;
+	margin-bottom: 20px;
+}
+h3 {
+	margin-bottom: 14px;
+	margin-top: 40px;
+}
+.athlets02, .players02 {
+	padding-bottom: 40px;
+}
+.athlets03, .players03 {
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+.players01 {
+	margin-bottom: 24px;
+}
+
+.players01, .players02, .players03 {
+	display: flex;
+	flex-direction: column;
+	padding-right: 50%;
+}
+.players01 {
+	position: relative;
+}
+.players01 picture {
+	position: absolute;
+	right: 0px;
+	top: 60px;
+}
+
+.beActive p, .findContact p, .workIt p {
+	font-size: 24px;
+	padding-bottom: 90px;
+	margin-bottom: 0;
+}
+h3 span {
+	font-size: 22px;
+}
+.number01, .number02,  .number03 {
+	width: 116px;
+	height: 116px;
+	position: relative;
+	bottom: 90px;
+	left: 20px;
+}
+.number01 span, .number02 span,.number03 span {
+	font: 24px/30px OpenSans-Bold, sans-serif;
+}
+
+
+.beActive h2, .findContact h2, .workIt h2 {
+	padding-top: 0px;
+	margin-top: -50px;
+	margin-bottom: 35px;
+}
+
+footer {
+	background: url("../img/game_1280.jpg") no-repeat;
+	background-size: cover;
+}
+
+.footer {
+	flex-direction: column;
+	align-items: center;
+
+}
+.surfaceShortIcon {
+	width: 105px;
+}
+.shortIcon {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 130px;
+	height: 137px;
+	background: linear-gradient(#7755d7, #50379b);
+	border-radius: 30px;
+	margin-top: 125px;
+}
+.download {
+	font: 80px/80px OpenSans-Bold, sans-serif;
+	padding-top: 80px; 
+	text-align: center;
+}
+.showeveryone {
+	font: 36px/50px OpenSans-Regular, sans-serif;
+	color: #9b8ec1;
+	padding-bottom: 285px;
+	text-align: center;
+}
+footer .surfaceTextIcon {
+	width: 205px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+}
+
+@media (min-width: 961px) and (max-width: 1920px){
+header {
+	background: url("../img/football_1920.jpg") no-repeat;
+	background-size: cover;
+}
+.header {
+	font: 90px/90px OpenSans-Bold, sans-serif;
+	padding-bottom: 105px; 
+}
+.surfaceTextIcon {
+	width: 191px;
+	margin-top: 45px;
+}
+.motto1 {
+	margin-top: 280px;
+	padding-bottom: 15px;
+	margin-left: 20px;
+}
+.motto2 {
+	padding-bottom: 225px;
+	margin-left: 28%;
+
+}
+.motto {
+	align-self: flex-start;
+	width: 100%;
+}
+.buttons {
+	display: flex;
+}
+button {
+	font-size: 14px;
+	flex-direction: row;
+	width: 310px;
+	height: 75px;
+	border-radius: 40px;
+	justify-content: center;
+	align-items: center;
+}
+.appstore {
+	margin-right: 15px;
+}
+.googleplay {
+	margin-left: 15px;
+}
+.appstoreIcon, .googleplayIcon {
+	margin-right: 15px;
+}
+
+
+h2 {
+	font-size: 80px;
+}
+.athlets01 h2, .players01 h2 {
+	margin-top: 85px;
+	margin-bottom: 40px;
+}
+h3 {
+	font-size: 36px;
+	margin-bottom: 10px;
+	margin-top: 40px;
+}
+h3 span {
+	font-size: 22px;
+}
+.athlets01 p, .athlets02 p, .athlets03 p, .players01 p, .players02 p, .players03 p {
+	font: 20px/28px OpenSans-Regular, sans-serif;
+}
+
+.athlets01, .athlets02, .athlets03 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-left: 57%;
+	padding-right: 5%;
+}
+.players01, .players02, .players03 {
+	padding-left: 5%;
+	display: flex;
+	flex-direction: column;
+	padding-right: 58%;
+}
+
+.athlets01 {
+	position: relative;
+	padding-bottom: 35px;
+}
+.players01 {
+	position: relative;
+	padding-bottom: 35px;
+}
+
+.athlets02, .players02 {
+	padding-bottom: 55px;
+}
+.athlets03, .players03 {
+	padding-bottom: 55px;
+	padding-top: 55px;
+}
+.athlets01 picture {
+	position: absolute;
+	left:  5%;
+	top: 25px;
+}
+.players01 picture {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+
+.beActive, .findContact, .workIt {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.findContact {
+	flex-direction: row-reverse;
+}
+
+.beActive picture, .findContact picture, .workIt picture {
+	max-width: 50%;
+}
+
+.beActiveText, .findContactText, .workItText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.beActiveText {
+	padding-left: 9%;
+}
+.findContactText {
+	padding-right: 8%;
+	padding-left: 1%;
+}
+
+.beActive p, .findContact p, .workIt p {
+	font-size: 24px;
+}
+
+.beActive h2, .findContact h2, .workIt h2 {
+	margin: 0;
+}
+
+.number01, .number02, .number03 {
+	width: 168px;
+	height: 155px;
+	position: absolute;
+	top: 100px;
+}
+
+.number01 span, .number02 span,.number03 span {
+	font: 24px/30px OpenSans-Bold, sans-serif;
+}
+
+footer {
+	background: url("../img/game_1920.jpg") no-repeat;
+	background-size: cover;
+}
+.footer {
+	flex-direction: column;
+	align-items: center;
+
+}
+.footericontext {
+	display: flex;
+	margin-top: 230px;
+	margin-bottom: 150px;
+}
+.footermotto {
+	display: flex;
+	flex-direction: column;
+}
+
+.surfaceShortIcon {
+	width: 105px;
+}
+.shortIcon {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 130px;
+	height: 137px;
+	margin-right: 30px;
+	background: linear-gradient(#7755d7, #50379b);
+	border-radius: 30px;
+}
+.download {
+	font: 80px/60px OpenSans-Bold, sans-serif;
+	text-align: center;
+}
+.showeveryone {
+	font: 30px/35px OpenSans-Regular, sans-serif;
+	color: #9b8ec1;
+	text-align: left;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+footer .surfaceTextIcon {
+	width: 190px;
+	margin-top: 250px;
+	margin-bottom: 50px;
+}
+
+}
