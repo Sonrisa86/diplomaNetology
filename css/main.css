@@ -82,7 +82,7 @@ a div span {
   margin-top: 0px;
 }
 
-.athlets01 span, .athlets02 span, .athlets03 span, .players01 span, .players02 span, .players03 span {
+.athlets-group span, .players-group span {
   text-transform: uppercase;
   font-family: OpenSans-Bold, sans-serif;
   position: relative;
@@ -92,7 +92,7 @@ a div span {
   margin-left: 20px;
 } 
 
-.athlets01 span::before, .athlets02 span::before, .athlets03 span::before, .players01 span::before, .players02 span::before, .players03 span::before {
+.athlets-group span::before, .players-group span::before {
   content: '';
   bottom: 2px;
   right: 0;
@@ -113,6 +113,9 @@ a div span {
 .athlets02, .players02 {
   background-color: #f5f4f9;
 }
+.athlets02 p, .players02 p {
+  margin-bottom: 0px;
+}
 
 .athlets03 {
   background-color: #5e42b0;
@@ -128,10 +131,6 @@ a div span {
 
 .athlets03 h3, .players03 h3 {
   margin-top: 0px;
-}
-
-.athlets02 p, .players02 p {
-  margin-bottom: 0px;
 }
 
 .number01, .number02,  .number03 {
@@ -275,7 +274,7 @@ h3 {
   padding-right: 20px;
 }
 
-.athlets01 p, .athlets02 p, .athlets03 p, .players01 p, .players02 p, .players03 p {
+.athlets-group p, .players-group p {
   font-size: 15px;
   padding-left: 20px;
   padding-right: 20px;
@@ -423,9 +422,10 @@ h2 {
   font-size: 80px;
 }
 
-
-
-.athlets01 p, .athlets02 p, .athlets03 p, .players01 p, .players02 p {
+h3 {
+  font: 32px/30px OpenSans-Bold, sans-serif;
+}
+.athlets-group p, .players01 p, .players02 p {
   font: 16px/28px OpenSans-Regular, sans-serif;
 }
 
@@ -433,30 +433,19 @@ h2 {
   font: 18px/28px OpenSans-Regular, sans-serif;
 }
 
-.athlets01, .athlets02, .athlets03 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.athlets-group {
+  padding-top: 20px;
   padding-left: 46%;
   padding-right: 30px;
 }
 
-.players01, .players02, .players03 {
-  align-items: flex-start;
+.players-group {
+  padding-top: 20px;
   padding-left: 30px;
-  display: flex;
-  flex-direction: column;
   padding-right: 50%;
 }
 
-.athlets01 h3 {
-  font-size: 32px;
-  margin-bottom: 14px;
-  margin-top: 40px;
-  display: inline;
-}
-
-.athlets01 span, .athlets02 span, .athlets03 span, .players01 span, .players02 span, .players03 span {
+.athlets-group span, .players-group span {
   font-size: 22px;
   float: left;
 }
@@ -588,7 +577,6 @@ header {
 .header {
   font: 90px/90px OpenSans-Bold, sans-serif;
   padding-bottom: 105px; 
-  
   color: #fff;
   text-transform: uppercase;
   display: flex;
@@ -648,39 +636,33 @@ h2 {
   font-size: 80px;
 }
 
-.athlets01 h2, .players01 h2 {
-  margin-top: 85px;
-  margin-bottom: 40px;
-}
-
 h3 {
   font-size: 36px;
   margin-bottom: 10px;
   margin-top: 40px;
 }
 
-.athlets01 span, .athlets02 span, .athlets03 span, .players01 span, .players02 span, .players03 span {
+.athlets01 h2, .players01 h2 {
+  margin-top: 85px;
+  margin-bottom: 40px;
+}
+
+.athlets-group span, .players-group span {
   font-size: 22px;
 }
 
-.athlets01 p, .athlets02 p, .athlets03 p, .players01 p, .players02 p, .players03 p {
+.athlets-group p, .players-group p {
   font: 20px/28px OpenSans-Regular, sans-serif;
 }
 
-.athlets01, .athlets02, .athlets03 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.athlets-group {
   padding-left: 57%;
   padding-right: 5%;
 }
 
-.players01, .players02, .players03 {
+.players-group {
   padding-left: 5%;
-  display: flex;
-  flex-direction: column;
   padding-right: 58%;
-  align-items: flex-start;
 }
 
 .athlets01, .players01 {
@@ -811,10 +793,12 @@ footer .surface-text-icon {
 
 header {
 	background-color: rgb(25, 25, 58);
+	position: relative;
 }
 header :after {
   content: " ";
   background: url("../img/football_1920.jpg") no-repeat;
+  background-size: cover;
   position: absolute; 
   bottom: 0;
   left: 0;
@@ -835,6 +819,12 @@ header :after {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+main {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*header {
@@ -906,39 +896,35 @@ h2 {
   font-size: 80px;
 }
 
-.athlets01 h2, .players01 h2 {
-  margin-top: 85px;
-  margin-bottom: 40px;
-}
-
 h3 {
   font-size: 36px;
   margin-bottom: 10px;
   margin-top: 40px;
 }
 
-.athlets01 span, .athlets02 span, .athlets03 span, .players01 span, .players02 span, .players03 span {
+.athlets01 h2, .players01 h2 {
+  margin-top: 85px;
+  margin-bottom: 40px;
+}
+
+.athlets-group span, .players-group span {
   font-size: 22px;
 }
 
-.athlets01 p, .athlets02 p, .athlets03 p, .players01 p, .players02 p, .players03 p {
+.athlets-group p, .players-group p {
   font: 20px/28px OpenSans-Regular, sans-serif;
 }
 
-.athlets01, .athlets02, .athlets03 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.athlets-group {
+  padding-top: 2%;
   padding-left: 57%;
   padding-right: 5%;
 }
 
-.players01, .players02, .players03 {
+.players-group {
+  padding-top: 2%;
   padding-left: 5%;
-  display: flex;
-  flex-direction: column;
   padding-right: 58%;
-  align-items: flex-start;
 }
 
 .athlets01, .players01 {
@@ -965,6 +951,12 @@ h3 {
   position: absolute;
   right: 0px;
   top: 0px;
+}
+
+.articles {
+max-width: 1920px;
+margin-left: auto;
+margin-right: auto;	
 }
 
 .group {
