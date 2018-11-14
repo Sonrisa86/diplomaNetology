@@ -82,7 +82,12 @@ a div span {
   margin-top: 0px;
 }
 
-.athlets-group span, .players-group span {
+.heading-wrapper {
+  position: relative;
+}
+
+.heading-wrapper span {
+  position: absolute;
   text-transform: uppercase;
   font-family: OpenSans-Bold, sans-serif;
   position: relative;
@@ -92,7 +97,7 @@ a div span {
   margin-left: 20px;
 } 
 
-.athlets-group span::before, .players-group span::before {
+.heading-wrapper span::before {
   content: '';
   bottom: 2px;
   right: 0;
