@@ -794,8 +794,9 @@ footer .surface-text-icon {
 header {
 	background-color: rgb(25, 25, 58);
 	position: relative;
+	z-index: 0;
 }
-header :after {
+/*header :after {
   content: " ";
   background: url("../img/football_1920.jpg") no-repeat;
   background-size: cover;
@@ -804,8 +805,19 @@ header :after {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.02;
+  opacity: 0.1;
+  z-index: 1;
+}*/
+
+.header-wrapper {
+  background: url("../img/football_1920.jpg") no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  position: relative;
+  z-index: 2;
+  
 }
+
 .header {
   max-width: 1920px;
   margin-left: auto;
@@ -819,6 +831,8 @@ header :after {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 3;
 }
 
 main {
