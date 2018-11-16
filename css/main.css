@@ -37,8 +37,8 @@ header {
 
 .appstore-icon {
   fill: #ffffff;
-  width: 20px;
-  margin-right: 5px;
+  width: 22px;
+  margin-right: 8px;  
 }
 
 .googleplay-icon {
@@ -73,8 +73,8 @@ a {
   border: none;
   border-radius: 30px;
   display: flex;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 7px;
+  padding-bottom: 6px;
   justify-content: center;
 }
 a:hover {
@@ -225,18 +225,21 @@ header:before {
 header .surface-text-icon {
   width: 133px;
   margin-top: 33px;
-  margin-bottom: 135px;
+  margin-bottom: 131px;
 }
 
 .motto1 {
-  padding-bottom: 15px;
-  margin-left: 20px;
+  padding-bottom: 20px;
+  margin-left: 1.5%;
+  letter-spacing: 1.5px;
 }
 
 .motto2 {
-  padding-bottom: 90px;
-  margin-left: 63px;
+  padding-bottom: 70px;
+  margin-left: 18%;
   margin-right: 9%;
+  letter-spacing: 0.9px;
+  font: 28px/33px OpenSans-Bold, sans-serif;
 }
 
 .motto {
@@ -247,7 +250,7 @@ header .surface-text-icon {
 .buttons {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 95%;
   position: relative;
 }
 
@@ -256,74 +259,121 @@ a {
   margin-top: 15px;
 }
 
+.appstore-icon {  
+  margin-top: -5px;
+  margin-left: -3px;
+}
+
 .googleplay-icon {
-  margin-left: -15px;
+  margin-left: -32px;
 }
 
-div.athlets01, div.players01 {
-  padding-top: 0px;
+.athlets01 h2, .players01 h2 {
+  font: 50px/55px OpenSans-Bold, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-left: 19px;
+  padding-right: 20px;
 }
 
-.athlets01 picture, .players01 picture {
+.athlets01 picture  {
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.players01 picture  {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-left: 5px;
 }
 
 .athlets01, .players01 {
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
 }
 
-.athlets02, .players02 {
-  padding-top: 27px;
-  padding-bottom: 55px;
+.athlets02 {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.athlets03, .players03 {
+.players02 {
   padding-top: 50px;
   padding-bottom: 55px;
 }
 
-.athlets01 h2, .players01 h2 {
-  font-size: 50px;
-  margin-top: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+.athlets03 {
+  padding-top: 53px;
+  padding-bottom: 55px;
 }
 
-.group h2 {
-  font-size: 28px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: -30px;
+.players03 {
+  padding-top: 48px;
+  padding-bottom: 38px;
 }
 
 h3 {
   font-size: 23px;
   padding-right: 20px;
+  letter-spacing: 0.5px;
 }
 
 .athlets-group p, .players-group p {
-  font-size: 15px;
+  font: 15px/18px OpenSans-Regular, sans-serif;
+  letter-spacing: 0.4px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 5px;
+}
+
+.athlets01 span, .athlets02 span, .athlets03 span, .players01 span, .players02 span, .players03 span {
+  font-size: 16px; 
+}
+
+.group h2 {
+  font: 28px/0px OpenSans-Bold, sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: -30px;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.be-active h2 {
+  padding-bottom: 5px;
+}
+
+.find-contact h2 {
+  padding-bottom: 10px;
 }
 
 .group p {
   font-size: 16px;
   padding-left: 20px;
   padding-right: 20px;
+  letter-spacing: 0.8px;
+  padding-bottom: 58px;
 }
 
-.athlets01 span, .athlets02 span, .athlets03 span, .players01 span, .players02 span, .players03 span {
-  font-size: 16px;
+.be-active p {
+  padding-bottom: 58px;
+}
+
+.find-contact p {
+  padding-bottom: 38px;
+}
+
+.work-it p {
+  padding-bottom: 50px;
 }
 
 .number01, .number02, .number03 {
   width: 70px;
   height: 70px;
   position: relative;
-  bottom: 50px;
+  bottom: 63px;
   left: 20px;
 }
 
@@ -366,24 +416,36 @@ footer:before {
   width: 72px;
   height: 74px;
   background: linear-gradient(#7755d7, #50379b);
-  border-radius: 10px;
+  border-radius: 15px;
   margin-top: 100px;
 }
 
 .download {
   font: 32px/30px OpenSans-Bold, sans-serif;
-  padding-top: 60px; 
+  letter-spacing: 1.5px;
+  padding-top: 53px; 
+  padding-bottom: 3px;
+  text-align: center;
 }
 
 .show-everyone {
   font: 14px/30px OpenSans-Regular, sans-serif;
   color: #9b8ec1;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
+  text-align: center;
+  letter-spacing: 0.8px;
+}
+
+footer .buttons {
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  position: relative;
 }
 
 footer .surface-text-icon {
   width: 133px;
-  margin-top: 80px;
+  margin-top: 85px;
   margin-bottom: 10px;
 }
 }
