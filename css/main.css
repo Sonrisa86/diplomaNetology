@@ -1,15 +1,18 @@
 @font-face {
-  font-family: OpenSans-Bold;
-  src: url(../fonts/OpenSans-Bold.ttf);
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Bold.woff);
+  font-weight: 700;
 }
 
 @font-face {
-  font-family: OpenSans-Regular;
-  src: url(../fonts/OpenSans-Regular.ttf);
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.woff);
+  font-weight: normal;
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
+  font-family: OpenSans;
 }
 
 header {
@@ -49,26 +52,21 @@ header {
   fill: #fff;
 }
 
-h2 {
+.athlets h2, .players h2, .articles h2 {
   text-transform: uppercase;
-  font-family: OpenSans-Bold, sans-serif;
+  font-weight: 700;
   color: #e7e7e7;
 }
 
-h3 {
+.athlets h3, .players h3 {
   text-transform: uppercase;
-  font-family: OpenSans-Bold, sans-serif;
+  font-weight: 700;
   color: #c1c1c1;
   display: inline;
   padding-left: 5px;
 }
 
-p {
-  font-family: OpenSans-Regular, sans-serif;
-}
-
-a {
-  font-family: OpenSans-Regular, sans-serif;
+.buttons a {
   color: rgba(255,255,255,0.7);
   text-decoration: none;
   background-color: #5e42b0;
@@ -79,19 +77,19 @@ a {
   padding-bottom: 6px;
   justify-content: center;
 }
-a:hover {
+.buttons a:hover {
   color: #fff;
 }
 
-a div {
+.buttons a div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-a div span {
-  font-family: OpenSans-Bold, sans-serif;
+.buttons a div span {
   margin-top: 0px;
+  font-weight: 700;
 }
 
 .heading-wrapper {
@@ -101,11 +99,9 @@ a div span {
 .heading-wrapper span {
   position: absolute;
   text-transform: uppercase;
-  font-family: OpenSans-Bold, sans-serif;
   position: relative;
   top: 10%;
   color: #000;
-  display: inline;
   margin-left: 20px;
 } 
 
@@ -151,19 +147,19 @@ a div span {
   margin-top: 0px;
 }
 
-.number01, .number02,  .number03 {
+.group-number {
   background-color: #5e42b0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.number01 span, .number02 span,.number03 span {
+.group-number span {
   color: #fff;
   position: relative;
 }
 
-.number01 span::before, .number02 span::before, .number03 span::before {
+.group-number span::before {
   content: '';
   bottom: 0;
   right: 0;
@@ -200,7 +196,10 @@ footer {
   margin-right: auto;
   color: #fff;
   text-transform: uppercase;
-  font-family: OpenSans-Regular, sans-serif;
+}
+
+.download {
+	font-weight: 700;
 }
 
 @media (max-width: 640px){
@@ -223,6 +222,7 @@ header:before {
   padding-right: 15px;
   padding-bottom: 85px; 
   font: 28px/30px OpenSans-Bold, sans-serif;
+  font-weight: 700;
 }
 
 header .surface-text-icon {
@@ -242,6 +242,7 @@ header .surface-text-icon {
   margin-left: 18%;
   letter-spacing: 0.9px;
   font: 28px/33px OpenSans-Bold, sans-serif;
+  font-weight: 700;
 }
 
 .motto {
@@ -256,7 +257,7 @@ header .surface-text-icon {
   position: relative;
 }
 
-a {
+.buttons a {
   font: 8px/10px OpenSans, sans-serif;
   margin-top: 15px;
 }
@@ -274,12 +275,18 @@ a {
   height: 22px;
 }
 
+.heading-wrapper span::before {
+  border-bottom: 4px;
+  border-radius: 1.5px;
+}
+
 .athlets > :nth-child(1) h2, .players > :nth-child(1) h2 {
   font: 50px/55px OpenSans-Bold, sans-serif;
   margin-top: 10px;
   margin-bottom: 15px;
   padding-left: 19px;
   padding-right: 20px;
+  font-weight: 700;
 }
 
 .athlets > :nth-child(1) picture  {
@@ -320,10 +327,11 @@ a {
   padding-bottom: 38px;
 }
 
-h3 {
+.athlets h3, .players h3 {
   font-size: 23px;
   padding-right: 20px;
   letter-spacing: 0.5px;
+
 }
 
 .athlets-group p, .players-group p {
@@ -336,23 +344,27 @@ h3 {
 
 .athlets span, .players span {
   font-size: 16px; 
+  font-weight: 700;
 }
 
 .group h2 {
   font: 28px/0px OpenSans-Bold, sans-serif;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: -30px;
+  margin-top: 37px;
   padding-bottom: 5px;
   letter-spacing: 1px;
+  font-weight: 700;
 }
 
 .be-active h2 {
   padding-bottom: 5px;
+  font-weight: 700;
 }
 
 .find-contact h2 {
   padding-bottom: 10px;
+  font-weight: 700;
 }
 
 .group p {
@@ -375,16 +387,22 @@ h3 {
   padding-bottom: 50px;
 }
 
-.number01, .number02, .number03 {
+.group-number {
   width: 70px;
   height: 70px;
-  position: relative;
-  bottom: 63px;
+  position: absolute;
+  top: 290px;
   left: 20px;
 }
 
-.number01 span, .number02 span,.number03 span {
+.group-number span {
   font: 14px/30px OpenSans-Bold, sans-serif;
+  font-weight: 700;
+}
+
+.group-number span::before {
+  border-bottom: 4px;
+  border-radius: 1.5px;
 }
 
 footer:before {
@@ -480,6 +498,7 @@ header:before {
   padding-right: 15px;
   padding-bottom: 40px; 
   font: 64px/60px OpenSans-Bold, sans-serif;
+  font-weight: 700;
 }
 
 .surface-text-icon {
@@ -512,7 +531,7 @@ header:before {
   padding-bottom: 34px;
 }
 
-a {
+.buttons a {
   font: 14px/20px OpenSans, sans-serif;
   flex-direction: row;
   width: 41%;
@@ -540,13 +559,21 @@ a {
   height: 35px;
 }
 
-h2 {
+.athlets h2, .players h2, .articles h2 {
   font: 80px/0px OpenSans-Bold, sans-serif;
+  font-weight: 700;
 }
 
-h3 {
+.athlets h3, .players h3 {
   font: 32px/30px OpenSans-Bold, sans-serif;
+  font-weight: 700;
 }
+
+.heading-wrapper span::before {
+  border-bottom: 5px;
+  border-radius: 2px;
+}
+
 .athlets-group p, .players-group p {
   font: 16px/21px OpenSans-Regular, sans-serif;
   position: relative;
@@ -573,6 +600,7 @@ h3 {
   font-size: 22px;
   float: left;
   margin-left: 0px;
+  font-weight: 700;
 }
 
 .athlets-picture {
@@ -652,6 +680,9 @@ h3 {
   margin-bottom: 0;
   padding-left: 20px;
 }
+.group img {
+	height: 50%;
+}
 
 .group h2 {
   padding-top: 0px;
@@ -660,7 +691,7 @@ h3 {
   padding-left: 20px;
 }
 
-.number01, .number02,  .number03 {
+.group-number {
   width: 116px;
   height: 116px;
   position: relative;
@@ -668,8 +699,14 @@ h3 {
   left: 20px;
 }
 
-.number01 span, .number02 span,.number03 span {
+.group-number span {
   font: 24px/30px OpenSans-Bold, sans-serif;
+  font-weight: 700;
+}
+
+.group-number span::before {
+  border-bottom: 5px;
+  border-radius: 2px;
 }
 
 footer:before {
@@ -727,7 +764,7 @@ footer:before {
   position: relative;
 }
 
-footer a {
+footer .buttons a {
   width: 38%;
 }
 
@@ -759,6 +796,7 @@ header:before {
   padding-right: 15px;
   padding-bottom: 95px; 
   font: 90px/90px OpenSans-Bold, sans-serif;
+  font-weight: 700;
 }
 
 .surface-text-icon {
@@ -788,7 +826,7 @@ header:before {
   padding-bottom: 0px;
 }
 
-a {
+.buttons a {
   font: 14px/20px OpenSans, sans-serif;
   flex-direction: row;
   width: 260px;
@@ -812,14 +850,19 @@ a {
   height: 40px;
 }
 
-h2 {
+.athlets h2, .players h2, .articles h2 {
   font-size: 80px;
 }
 
-h3 {
+.athlets h3, .players h3 {
   font-size: 36px;
   margin-bottom: 10px;
   margin-top: 40px;
+}
+
+.heading-wrapper span::before {
+  border-bottom: 5px;
+  border-radius: 2px;
 }
 
 .athlets h2 {
@@ -832,10 +875,13 @@ h3 {
 .athlets-group span, .players-group span {
   font-size: 22px;
   margin-left: 0;
+  font-weight: 700;
 }
 
 .athlets-group p, .players-group p {
   font: 20px/28px OpenSans-Regular, sans-serif;
+  position: relative;
+  z-index: 1;
 }
 
 .athlets-group {
@@ -844,7 +890,7 @@ h3 {
 }
 
 .athlets-picture {
-	position: relative;
+  position: relative;
 }
 
 .athlets-picture picture {
@@ -907,7 +953,6 @@ h3 {
   padding-bottom: 20px;
 }
 
-
 .group {
   display: flex;
   flex-direction: row;
@@ -949,15 +994,21 @@ h3 {
   padding-left: 20px;
 }
 
-.number01, .number02, .number03 {
+.group-number {
   width: 168px;
   height: 155px;
   position: absolute;
   top: 150px;
 }
 
-.number01 span, .number02 span,.number03 span {
+.group-number span {
   font: 24px/30px OpenSans-Bold, sans-serif;
+  font-weight: 700;
+}
+
+.group-number span::before {
+  border-bottom: 5px;
+  border-radius: 2px;
 }
 
 footer:before {
@@ -1053,6 +1104,7 @@ header:before {
   padding-right: 15px;
   padding-bottom: 105px; 
   font: 90px/90px OpenSans-Bold, sans-serif;
+  font-weight: 700;
 }
 
 .surface-text-icon {
@@ -1082,7 +1134,7 @@ header:before {
   padding-bottom: 0px;
 }
 
-a {
+.buttons a {
   font: 14px/20px OpenSans, sans-serif;
   flex-direction: row;
   width: 260px;
@@ -1106,14 +1158,19 @@ a {
   height: 40px;
 }
 
-h2 {
+.athlets h2, .players h2, .articles h2 {
   font-size: 80px;
 }
 
-h3 {
+.athlets h3, .players h3 {
   font-size: 36px;
   margin-bottom: 10px;
   margin-top: 40px;
+}
+
+.heading-wrapper span::before {
+  border-bottom: 5px;
+  border-radius: 2px;
 }
 
 .athlets h2 {
@@ -1126,10 +1183,13 @@ h3 {
 .athlets-group span, .players-group span {
   font-size: 22px;  
   margin-left: 0;
+  font-weight: 700;
 }
 
 .athlets-group p, .players-group p {
   font: 20px/28px OpenSans-Regular, sans-serif;
+  position: relative;
+  z-index: 1;
 }
 
 .athlets-group {
@@ -1208,8 +1268,8 @@ h3 {
 }
 .athlets-group-content {
   padding-top: 2%;
-  padding-left: 0%;
-  padding-right: 35%;
+  padding-left: 57%;
+  padding-right: 5%;
 }
 
 .players-group-wrapper {
@@ -1222,7 +1282,6 @@ h3 {
   padding-left: 20%;
   padding-right: 0%;
 }
-
 
 .articles {
   max-width: 1920px;
@@ -1271,15 +1330,21 @@ h3 {
   padding-left: 20px;
 }
 
-.number01, .number02, .number03 {
+.group-number {
   width: 168px;
   height: 155px;
   position: absolute;
   top: 150px;
 }
 
-.number01 span, .number02 span,.number03 span {
+.group-number span {
   font: 24px/30px OpenSans-Bold, sans-serif;
+  font-weight: 700;
+}
+
+.group-number span::before {
+  border-bottom: 5px;
+  border-radius: 2px;
 }
 
 footer:before {
