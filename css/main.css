@@ -99,11 +99,14 @@ header {
 .heading-wrapper span {
   position: absolute;
   text-transform: uppercase;
-  position: relative;
   top: 10%;
   color: #000;
   margin-left: 20px;
 } 
+
+.heading-wrapper h3 {
+  padding-left: 40px;
+}
 
 .heading-wrapper span::before {
   content: '';
@@ -169,7 +172,7 @@ header {
   background-color: #8f7bc8;
 }
 
-.group  {
+.content  {
   position: relative;
 }
 
@@ -199,7 +202,7 @@ footer {
 }
 
 .download {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 @media (max-width: 640px){
@@ -221,7 +224,8 @@ header:before {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 85px; 
-  font: 28px/30px OpenSans-Bold, sans-serif;
+  font-size: 28px;
+  line-height: 30px;
   font-weight: 700;
 }
 
@@ -241,8 +245,6 @@ header .surface-text-icon {
   padding-bottom: 70px;
   margin-left: 18%;
   letter-spacing: 0.9px;
-  font: 28px/33px OpenSans-Bold, sans-serif;
-  font-weight: 700;
 }
 
 .motto {
@@ -258,8 +260,10 @@ header .surface-text-icon {
 }
 
 .buttons a {
-  font: 8px/10px OpenSans, sans-serif;
+  font-size: 8px;
+  line-height: 10px;
   margin-top: 15px;
+  font-weight: normal;
 }
 
 .appstore-icon {  
@@ -281,7 +285,8 @@ header .surface-text-icon {
 }
 
 .athlets > :nth-child(1) h2, .players > :nth-child(1) h2 {
-  font: 50px/55px OpenSans-Bold, sans-serif;
+  font-size: 50px;
+  line-height: 55px;
   margin-top: 10px;
   margin-bottom: 15px;
   padding-left: 19px;
@@ -331,11 +336,11 @@ header .surface-text-icon {
   font-size: 23px;
   padding-right: 20px;
   letter-spacing: 0.5px;
-
 }
 
 .athlets-group p, .players-group p {
-  font: 15px/18px OpenSans-Regular, sans-serif;
+  font: 15px;
+  line-height: 18px;
   letter-spacing: 0.4px;
   padding-left: 20px;
   padding-right: 20px;
@@ -348,10 +353,9 @@ header .surface-text-icon {
 }
 
 .group h2 {
-  font: 28px/0px OpenSans-Bold, sans-serif;
+  font: 28px; 
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 37px;
   padding-bottom: 5px;
   letter-spacing: 1px;
   font-weight: 700;
@@ -391,12 +395,13 @@ header .surface-text-icon {
   width: 70px;
   height: 70px;
   position: absolute;
-  top: 290px;
+  top: -80px;
   left: 20px;
 }
 
 .group-number span {
-  font: 14px/30px OpenSans-Bold, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
   font-weight: 700;
 }
 
@@ -446,7 +451,8 @@ footer:before {
 }
 
 .download {
-  font: 32px/30px OpenSans-Bold, sans-serif;
+  font-size: 32px;
+  line-height: 30px;
   letter-spacing: 1.5px;
   padding-top: 53px; 
   padding-bottom: 3px;
@@ -455,7 +461,8 @@ footer:before {
 }
 
 .show-everyone {
-  font: 14px/30px OpenSans-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
   color: #9b8ec1;
   padding-bottom: 50px;
   text-align: center;
@@ -497,7 +504,8 @@ header:before {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 40px; 
-  font: 64px/60px OpenSans-Bold, sans-serif;
+  font-size: 64px;
+  line-height: 60px;
   font-weight: 700;
 }
 
@@ -532,7 +540,9 @@ header:before {
 }
 
 .buttons a {
-  font: 14px/20px OpenSans, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
   flex-direction: row;
   width: 41%;
   padding-top: 10px;
@@ -560,12 +570,14 @@ header:before {
 }
 
 .athlets h2, .players h2, .articles h2 {
-  font: 80px/0px OpenSans-Bold, sans-serif;
+  font-size: 80px;
+  line-height: 0px;
   font-weight: 700;
 }
 
 .athlets h3, .players h3 {
-  font: 32px/30px OpenSans-Bold, sans-serif;
+  font-size: 32px;
+  line-height: 30px;
   font-weight: 700;
 }
 
@@ -575,13 +587,15 @@ header:before {
 }
 
 .athlets-group p, .players-group p {
-  font: 16px/21px OpenSans-Regular, sans-serif;
+  font-size: 16px;
+  line-height: 21px;
   position: relative;
   z-index: 1;
 }
 
 .players > :nth-child(4) p {
-  font: 18px/23px OpenSans-Regular, sans-serif;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .athlets-group {
@@ -596,10 +610,9 @@ header:before {
   padding-right: 40%;
 }
 
-.athlets-group span, .players-group span {
+.heading-wrapper span {
   font-size: 22px;
-  float: left;
-  margin-left: 0px;
+  margin-left: 0;
   font-weight: 700;
 }
 
@@ -615,7 +628,7 @@ header:before {
 }
 
 .athlets-picture img {
-	width: 400px;
+  width: 400px;
 }
 
 .athlets h2 {
@@ -640,7 +653,7 @@ header:before {
 }
 
 .players-picture {
-	position: relative;
+  position: relative;
 }
 
 .players-picture picture {
@@ -651,7 +664,7 @@ header:before {
 }
 
 .players-picture img {
-	width: 370px;
+  width: 370px;
 }
 
 .players h2 {
@@ -680,13 +693,9 @@ header:before {
   margin-bottom: 0;
   padding-left: 20px;
 }
-.group img {
-	height: 50%;
-}
 
 .group h2 {
-  padding-top: 0px;
-  margin-top: -40px;
+  padding-top: 10px;
   margin-bottom: 45px;
   padding-left: 20px;
 }
@@ -694,13 +703,14 @@ header:before {
 .group-number {
   width: 116px;
   height: 116px;
-  position: relative;
-  bottom: 90px;
+  position: absolute;
+  top: -160px;
   left: 20px;
 }
 
 .group-number span {
-  font: 24px/30px OpenSans-Bold, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
   font-weight: 700;
 }
 
@@ -750,14 +760,16 @@ footer:before {
 }
 
 .download {
-  font: 80px/80px OpenSans-Bold, sans-serif;
+  font-size: 80px;
+  line-height: 80px;
   padding-top: 40px; 
   text-align: center;
   position: relative;
 }
 
 .show-everyone {
-  font: 36px/50px OpenSans-Regular, sans-serif;
+  font-size: 36px;
+  line-height: 50px;
   color: #9b8ec1;
   padding-bottom: 205px;
   text-align: center;
@@ -795,7 +807,8 @@ header:before {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 95px; 
-  font: 90px/90px OpenSans-Bold, sans-serif;
+  font-size: 90px;
+  line-height: 90px;
   font-weight: 700;
 }
 
@@ -827,7 +840,9 @@ header:before {
 }
 
 .buttons a {
-  font: 14px/20px OpenSans, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
   flex-direction: row;
   width: 260px;
   height: 50px;
@@ -879,7 +894,8 @@ header:before {
 }
 
 .athlets-group p, .players-group p {
-  font: 20px/28px OpenSans-Regular, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
   position: relative;
   z-index: 1;
 }
@@ -968,7 +984,7 @@ header:before {
   margin-bottom: -4px;
 }
 
-.content {
+.articles .content {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -998,11 +1014,20 @@ header:before {
   width: 168px;
   height: 155px;
   position: absolute;
-  top: 150px;
+  top: 130px;
+}
+
+.be-active .group-number, .work-it .group-number {
+  left: -84px;
+}
+
+.find-contact .group-number {
+  right: -84px;
 }
 
 .group-number span {
-  font: 24px/30px OpenSans-Bold, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
   font-weight: 700;
 }
 
@@ -1032,7 +1057,7 @@ footer:before {
 .footer-icon-text {
   display: flex;
   margin-top: 200px;
-  margin-bottom: 150px;
+  margin-bottom: 90px;
 }
 
 .footer-motto {
@@ -1058,22 +1083,20 @@ footer:before {
 }
 
 .download {
-  font: 80px/60px OpenSans-Bold, sans-serif;
+  font-size: 80px;
+  line-height: 60px;
   text-align: center;
   position: relative;
 }
 
 .show-everyone {
-  font: 30px/35px OpenSans-Regular, sans-serif;
+  font-size: 30px;
+  line-height: 35px;
   color: #9b8ec1;
   text-align: left;
   margin-top: 10px;
   margin-left: 5px;
   position: relative;
-}
-
-footer .buttons {
-  margin-top: -65px;
 }
 
 footer .surface-text-icon {
@@ -1099,11 +1122,12 @@ header:before {
 }
 
 .header-wrapper {
-  max-width: 1920px;
+  max-width: 1560px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 105px; 
-  font: 90px/90px OpenSans-Bold, sans-serif;
+  padding-bottom: 105px;
+  font-size: 90px;
+  line-height: 90px;  
   font-weight: 700;
 }
 
@@ -1135,7 +1159,9 @@ header:before {
 }
 
 .buttons a {
-  font: 14px/20px OpenSans, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
   flex-direction: row;
   width: 260px;
   height: 50px;
@@ -1187,23 +1213,19 @@ header:before {
 }
 
 .athlets-group p, .players-group p {
-  font: 20px/28px OpenSans-Regular, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
   position: relative;
   z-index: 1;
 }
 
-.athlets-group {
-  padding-left: 52%;
-  padding-right: 5%;
-}
-
 .athlets-picture {
-	position: relative;
+  position: relative;
 }
 
 .athlets-picture picture {
   position: absolute;
-  left:  19%;
+  left: 19%;
   top: -40px;
 }
 
@@ -1219,7 +1241,6 @@ header:before {
 .athlets > :nth-child(4) {
   padding-top: 20px;
   padding-bottom: 15px;
-
 }
 
 .players-group {
@@ -1262,10 +1283,11 @@ header:before {
 }
 
 .athlets-group-wrapper {
-  max-width: 1920px;
+  max-width: 1560px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .athlets-group-content {
   padding-top: 2%;
   padding-left: 57%;
@@ -1273,10 +1295,11 @@ header:before {
 }
 
 .players-group-wrapper {
-  max-width: 1920px;
+  max-width: 1560px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .players-group-content {
   padding-top: 2%;
   padding-left: 20%;
@@ -1304,7 +1327,7 @@ header:before {
   margin-bottom: -4px;
 }
 
-.content {
+.articles .content {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -1334,11 +1357,20 @@ header:before {
   width: 168px;
   height: 155px;
   position: absolute;
-  top: 150px;
+  top: 130px;
+}
+
+.be-active .group-number, .work-it .group-number {
+  left: -84px;
+}
+
+.find-contact .group-number {
+  right: -84px;
 }
 
 .group-number span {
-  font: 24px/30px OpenSans-Bold, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
   font-weight: 700;
 }
 
@@ -1363,6 +1395,7 @@ footer:before {
 .footer-wrapper {
   flex-direction: column;
   align-items: center;
+  max-width: 1560px;
 }
 
 .footer-icon-text {
@@ -1394,13 +1427,16 @@ footer:before {
 }
 
 .download {
-  font: 80px/60px OpenSans-Bold, sans-serif;
+  font-size: 80px;
+  line-height: 60px;
   text-align: center;
   position: relative;
+  font-weight: 700;
 }
 
 .show-everyone {
-  font: 30px/35px OpenSans-Regular, sans-serif;
+  font-size: 30px;
+  line-height: 35px;
   color: #9b8ec1;
   text-align: left;
   margin-top: 10px;
