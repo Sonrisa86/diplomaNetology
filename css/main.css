@@ -36,15 +36,17 @@ header {
 }
 
 .appstore-icon {
-  fill: #ffffff;
-  width: 22px;
+  fill: rgba(255,255,255,0.7);
   margin-right: 8px;  
 }
 
 .googleplay-icon {
-  fill: #ffffff;
-  width: 22px;
+  fill: rgba(255,255,255,0.7);
   margin-right: 5px;
+}
+
+.appstore-icon:hover, .googleplay-icon:hover {
+  fill: #fff;
 }
 
 h2 {
@@ -67,7 +69,7 @@ p {
 
 a {
   font-family: OpenSans-Regular, sans-serif;
-  color: #fff;
+  color: rgba(255,255,255,0.7);
   text-decoration: none;
   background-color: #5e42b0;
   border: none;
@@ -78,7 +80,7 @@ a {
   justify-content: center;
 }
 a:hover {
-	color: #000;
+  color: #fff;
 }
 
 a div {
@@ -238,7 +240,6 @@ header .surface-text-icon {
 .motto2 {
   padding-bottom: 70px;
   margin-left: 18%;
-  margin-right: 9%;
   letter-spacing: 0.9px;
   font: 28px/33px OpenSans-Bold, sans-serif;
 }
@@ -263,10 +264,14 @@ a {
 .appstore-icon {  
   margin-top: -5px;
   margin-left: -3px;
+  height: 23px;
+  width: 22px;
 }
 
 .googleplay-icon {
   margin-left: -32px;
+  width: 22px;
+  height: 22px;
 }
 
 .athlets > :nth-child(1) h2, .players > :nth-child(1) h2 {
@@ -491,7 +496,6 @@ header:before {
 .motto2 {
   padding-bottom: 238px;
   margin-left: 21%;
-  margin-right: 2%;
 }
 
 .motto {
@@ -527,10 +531,13 @@ a {
 .appstore-icon {
   margin-right: 15px;
   width: 35px;
+  height: 35px;
 }
+
 .googleplay-icon {
   margin-right: 25px;
   width: 35px;
+  height: 35px;
 }
 
 h2 {
@@ -802,6 +809,7 @@ a {
 .appstore-icon, .googleplay-icon {
   margin-right: 15px;
   width: 40px;
+  height: 40px;
 }
 
 h2 {
@@ -1095,6 +1103,7 @@ a {
 .appstore-icon, .googleplay-icon {
   margin-right: 15px;
   width: 40px;
+  height: 40px;
 }
 
 h2 {
@@ -1175,7 +1184,7 @@ h3 {
 .players h2 {
   margin-top: 57px;
   margin-bottom: 40px;
-  padding-left: 22%;
+  padding-left: 18%;
 }
 
 .players > :nth-child(2) {
@@ -1210,7 +1219,7 @@ h3 {
 }
 .players-group-content {
   padding-top: 2%;
-  padding-left: 30%;
+  padding-left: 20%;
   padding-right: 0%;
 }
 
